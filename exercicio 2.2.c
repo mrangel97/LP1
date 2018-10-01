@@ -1,4 +1,3 @@
-//programa em c
 #include <stdio.h>
 #include <stdlib.h>
 
