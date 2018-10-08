@@ -16,8 +16,10 @@ int main()
     p=&a;
   else
     p=&b;
+  
+  printf("A:%d B:%d\n",a,b);
 
-  *p=50-*p;
+  *p=*p-50;
 
    printf("A:%d\nB:%d\n",a,b);
    return 0;
