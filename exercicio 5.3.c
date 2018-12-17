@@ -7,7 +7,7 @@ void compra(int *conta,int conta2){
 	for(i=0;i<5;i++){
 	  *conta=*conta-compras[i];
 	   printf("%d %d\n",*conta,conta2);
-    }
+        }
 }
 
 int main()
