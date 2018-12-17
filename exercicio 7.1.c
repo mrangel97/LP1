@@ -1,27 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Cachorro{
-   char raca[100];
+struct Personagem{
+   char nome[100];
    int idade;
-   float peso;
+   char classe[100];
 };
 
-void preenche(struct Cachorro *c)
+void preenche(struct Personagem *p)
 {
-    scanf("%s",(*c).raca);
-    scanf("%d",&(*c).idade);
-    scanf("%f",&(*c).peso);
+    scanf("%s",(*p).nome);
+    scanf("%d",&(*p).idade);
+    scanf("%s",(*p).classe);
 }
 
 int main()
 {
-   struct Cachorro c1;
-   struct Cachorro c2;
-   preenche(&c1);
-   preenche(&c2);
-   printf("****Cachorro****\n");
-   printf("Raca=%s\nIdade=%d\nPeso=%.2f\n",c1.raca,c1.idade,c1.peso);
-   printf("Raca=%s\nIdade=%d\nPeso=%.2f\n",c2.raca,c2.idade,c2.peso);
+   struct Personagem p1;
+   struct Personagem p2;
+   preenche(&p1);
+   preenche(&p2);
+   printf("****Personagem****\n");
+   printf("Nome=%s\nIdade=%d\nClasse=%s\n",p1.nome,p1.idade,p1.classe);
+   printf("*******************\n");
+   printf("Nome=%s\nIdade=%d\nClasse=%s\n",p2.nome,p2.idade,p2.classe);
    return 0;
 }
