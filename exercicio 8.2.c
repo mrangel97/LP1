@@ -8,14 +8,14 @@ int main()
 		printf("Nao foi possivel abrir o arquivo\n");
 		exit(1);
 	}
-    char palavra[25];
-    int i=0;
+        char palavra[25];
+        int i=0;
 	char letra=fgetc(arq2);
 	while(letra!=EOF){
-        palavra[i]=letra;
-        i++;
-        letra=fgetc(arq2);
-    }
+          palavra[i]=letra;
+          i++;
+          letra=fgetc(arq2);
+        }
     printf("Palavra lida: %s\n",palavra);
-	return 0;
+    return 0;
 }
